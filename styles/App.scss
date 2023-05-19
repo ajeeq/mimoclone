@@ -1,0 +1,151 @@
+$primary-color: #f8fafd;
+$secondary-color: #707070;
+$primary-font: OpenSans-Regular;
+$primary-font-weight: 400;
+$primary-font-color: #242746;
+$secondary-font-color: #4A4C84;
+$primary-button-color: #7F4BDE;
+
+.outerContainer {
+  flex: 1;
+  flex-direction: column;
+  background-color: $primary-color;
+}
+
+.appNameHeaderText {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 50px;
+  color: $primary-font-color;
+}
+
+.alignAppNameAndLogo {
+  align-items: center;
+  margin-top: 10%;
+}
+
+.adsBanner {
+  background-color: $primary-color;
+  width: 100%;
+  height: 10%;
+}
+
+.adsBannerText {
+  color: $secondary-color;
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.searchIconButton {
+  background-color: $primary-font-color;
+  align-items: center;
+  justify-content: center;
+  border-color: $secondary-color;
+  border-width: 0.5px;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+.editIconButton {
+  background-color: $primary-font-color;
+  align-items: center;
+  justify-content: center;
+  border-color: $secondary-color;
+  border-width: 0.5px;
+  padding-left: 8px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.alignButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.searchIconText {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 7px;
+}
+
+.editIconText {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.alignButtonWithText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frameItLogo {
+  margin-top: 3%;
+}
+
+.modalFooter {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  background-color: $primary-color;
+  height: 9%;
+  bottom: 0;
+}
+
+.alignFooterTextAndButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 79%;
+  justify-content: space-between;
+}
+
+.buttonFooter {
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  border-radius: 15px;
+  margin-right: 19px;
+  background-color: $primary-font-color;
+}
+
+.buttonFooterText {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.footerStatementText {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: 14px;
+  color: $secondary-color;
+  margin-left: 19px;
+}
+
+.spaceMainContentAndFooter {
+  margin-bottom: 20%;
+}
+
+.title {
+  margin-top: 16;
+  margin-bottom: 16;
+  color: black;
+  font-weight: bold;
+  font-size: 24;
+}
