@@ -11,7 +11,7 @@ Only Learn section is still in progress. Other remaining section are not started
 
 ### Dependencies
 
-* Necessary dependencies, refer [React Native official docs](https://reactnative.dev/).
+* Necessary dependencies, refer [React Native official docs](https://reactnative.dev/) and [Expo](https://expo.dev/).
 * Make sure you have Android or iOS simulator, otherwise you can use physical device.
 
 ### Installing
@@ -21,13 +21,13 @@ Only Learn section is still in progress. Other remaining section are not started
 
 ### Executing program
 
-* To run the application, run ```npm run android``` for android device, or ```npm run ios``` for ios device.
+* To run the application, run ```npx expo start```.
 
-## Help
+<!-- ## Help
 
 If you encounter any such error, it is a best practice to clean the project using following commands in the terminal(currently applicable for android):
 * ```cd android```
-* ```gradlew clean```
+* ```gradlew clean``` -->
 
 ## Authors
 
