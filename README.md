@@ -16,7 +16,7 @@ Only Learn section is still in progress. Other remaining section are not started
 
 ### Installing
 
-* Fork or clone (download az zip) this repository.
+* Fork or clone (download as zip) this repository.
 * Run ```npm install``` in the terminal.
 
 ### Executing program
@@ -37,7 +37,7 @@ Contributors names and contact info
 
 ## Version History
 
-* Refer [here](https://github.com/ajeeq/mimoappchallenge/commits/master).
+* Refer [here](https://github.com/ajeeq/mimoclone/commits/master).
 
 <!-- ## License -->
 
