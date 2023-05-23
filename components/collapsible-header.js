@@ -37,10 +37,11 @@ import {
 } from 'react-native';
 // import BottomSheet, { BottomSheetView, BottomSheetModal, BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 import { CodingPathModal } from "./bottom-sheet";
+import { TopBarComponentRight } from "./top-bar-components";
 // import Animated from 'react-native-reanimated';
 // import BottomSheet from 'reanimated-bottom-sheet';
 
-import TopBar from './top-bar';
+import TopBarHandler from './top-bar-handler';
 
 const HEADER_MAX_HEIGHT = 300;
 const HEADER_MIN_HEIGHT = Platform.OS === 'ios' ? 60 : 80;
@@ -248,11 +249,11 @@ export default function CollapsibleHeader(props) {
           />
         </Animated.View>
 
-        <Animated.View style={{ position: 'absolute', height: 32, top: 0, left: 0, right: 0, marginTop: Platform.OS === 'ios' ? 28 : 38, justifyContent: 'center' }} >
-          <TopBar bgColor='transparent' leftComponent={CodingPath} />
+        <Animated.View style={{ position: 'absolute', height: 32, top: 0, left: 0, right: 0, marginTop: Platform.OS === 'ios' ? 28 : 38, justifyContent: 'center' }}>
+          <TopBarHandler bgColor='transparent' leftComponent={CodingPath} rightComponent={TopBarComponentRight}/>
         </Animated.View>
 
-        <CodingPathModal 
+        <CodingPathModal
           ref={sheetRef}
           index={0}
           snapPoints={snapPoints}

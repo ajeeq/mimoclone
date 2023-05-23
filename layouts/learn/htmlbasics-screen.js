@@ -11,73 +11,14 @@ import {
   FlatList,
 } from 'react-native';
 
-import TopBar from '../../components/top-bar';
+import TopBarHandler from '../../components/top-bar-handler';
 import Donut from '../../components/donut';
 import Card from '../../components/card';
+import { TopBarComponentRight } from '../../components/top-bar-components';
 
 // import styles from '../../styles/App.scss';
 
 export default function HtmlBasicsScreen({navigation}) {
-  const gridData = [
-    {
-      id: 1,
-      title: 'First Item',
-    },
-    {
-      id: 2,
-      title: 'Second Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-    {
-      id: 3,
-      title: 'Third Item',
-    },
-  ];
-
-  const Item = ({title}) => (
-    <View style={styles.item}>
-      <Text style={styles.titles}>{title}</Text>
-    </View>
-  );
 
   const GoBack = () => {
     return (
@@ -100,7 +41,7 @@ export default function HtmlBasicsScreen({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor: '#F6F7FB', flexDirection: 'column' }}>
       <View style={{ height: 32, top: 0, left: 0, right: 0, marginTop: Platform.OS === 'ios' ? 28 : 38, justifyContent: 'center' }}>
-        <TopBar bgColor='#333661' leftComponent={GoBack} />
+        <TopBarHandler bgColor='#333661' leftComponent={GoBack} rightComponent={TopBarComponentRight}/>
       </View>
 
       <View style={styles.row}>

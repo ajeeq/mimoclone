@@ -44,7 +44,7 @@ export const CodingPathModal = forwardRef((props, ref) => {
 
   // render
   return (
-    <BottomSheetModalProvider style={{flex:1}}>
+    <BottomSheetModalProvider>
       <BottomSheetModal
         ref={ref}
         index={props.index}

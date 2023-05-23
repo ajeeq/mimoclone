@@ -17,6 +17,7 @@ export default function SelectionButton({
 
     <TouchableOpacity
       onPress={onPress}
+      disabled={true}
       style={styles.button}
     >
       <Text style={{ fontSize: 14, paddingVertical: 10, paddingHorizontal: 20 }}>{name}</Text>

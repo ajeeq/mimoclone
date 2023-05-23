@@ -15,7 +15,7 @@ import styles from '../../styles/App.scss';
 
 import { CodingPathModal } from '../../components/bottom-sheet';
 import CollapsibleHeader from '../../components/collapsible-header';
-import TopBar from '../../components/top-bar';
+import TopBarHandler from '../../components/top-bar-handler';
 import Donut from '../../components/donut';
 import DonutLocked from '../../components/donut-locked';
 import VerticalCircleSpacer from '../../components/vertical-circle-spacer';
@@ -40,7 +40,7 @@ const AnimatedTouchable = Animated.createAnimatedComponent(TouchableOpacity);
 export default function LearnScreen({navigation}) {
   return (
     <View style={styles.outerContainer}>
-      {/* <TopBar style={{ position: 'absolute' }} /> */}
+      {/* <TopBarHandler style={{ position: 'absolute' }} /> */}
       {/* <Sliver> */}
         {/* <Text style={styles.title}>This is Title</Text>
         <Text style={styles.content}>{str}</Text> */}
