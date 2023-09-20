@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "mimoclone",
-    "slug": "mimoclone",
+    "slug": "mimo-clone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,7 +28,18 @@
     },
     "packagerOpts": {
       "config": "metro.config.js",
-      "sourceExts": ["js", "jsx", "scss", "sass"]
-    }
+      "sourceExts": [
+        "js",
+        "jsx",
+        "scss",
+        "sass"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7f8f0254-a2af-4158-a5f3-a93bcdbd00fd"
+      }
+    },
+    "owner": "ajeeq"
   }
 }

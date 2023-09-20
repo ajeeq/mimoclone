@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import LeaderboardScreen from './leaderboard-screen';
-import CreateProfileScreen from '../misc/create-profile-screen';
+import CreateProfileScreen from '../auth/create-profile-screen';
 
 const LeaderboardStack = createNativeStackNavigator();
 

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Alert, Modal, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export default LoginModal = () => {
+export default LoginModal = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.centeredView}>
@@ -24,8 +24,8 @@ export default LoginModal = () => {
                 <Text style={{ color: '#242746', fontSize: 14, fontWeight: 900 }}>CANCEL</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity onPress={() => setModalVisible(!modalVisible)} style={{ paddingLeft: 40 }}>
-              <Text style={{ color: '#242746', fontSize: 14, fontWeight: 900 }}>CONTINUE</Text>
+              <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')} style={{ paddingLeft: 40 }}>
+                <Text style={{ color: '#242746', fontSize: 14, fontWeight: 900 }}>CONTINUE</Text>
               </TouchableOpacity>
             </View>
             
@@ -34,7 +34,7 @@ export default LoginModal = () => {
       </Modal>
 
       <TouchableOpacity
-        onPress={() => setModalVisible(true)}>
+        onPress={() => setModalVisible(!modalVisible)}>
         <Text style={styles.textStyle}>LOG IN</Text>
       </TouchableOpacity>
     </View>

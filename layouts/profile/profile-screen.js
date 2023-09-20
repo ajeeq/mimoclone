@@ -33,7 +33,7 @@ export default function ProfileScreen({navigation}) {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F6F7FB' }}>
       <View style={{ position: 'absolute', flex: 1, top: insets.top, right: 0, padding: 14 }}>
-        <LoginModal />
+        <LoginModal navigation={navigation}/>
       </View>
 
       <View style={{ position: 'absolute', flex: 1, alignItems: 'center' }}>

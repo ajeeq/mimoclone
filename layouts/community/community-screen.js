@@ -35,7 +35,7 @@ export default function CommunityScreen({navigation}) {
 
       <TouchableOpacity 
         style={{ position: 'absolute', flex: 1, bottom: 0, margin: 14, backgroundColor: '#7F4BDE', borderRadius: 14, paddingVertical: 14, paddingHorizontal: 128 }}
-        onPress={() => navigation.navigate('CreateProfileScreen')}
+        onPress={() => navigation.navigate('GraphqlScreen')}
       >
         <Text style={{ color: '#FFFFFF', fontSize: 14, fontWeight: 900 }}>CREATE PROFILE</Text>
       </TouchableOpacity>
